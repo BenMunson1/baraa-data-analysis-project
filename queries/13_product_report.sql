@@ -19,9 +19,9 @@ Highlights:
 	   - average monthly revenue
 */
 
--- Create Report: gold.report_customers
-IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
-    DROP VIEW gold.report_customers;
+-- Create Report: gold.report_products
+IF OBJECT_ID('gold.report_products', 'V') IS NOT NULL
+    DROP VIEW gold.report_products;
 GO
 
 CREATE VIEW gold.report_products AS 
@@ -113,3 +113,4 @@ product_key	product_name			category	subcategory		cost	last_sale_date	recency_in_
 5			Mountain-100 Black- 44	Bikes		Mountain Bikes	1898	2011-12-21		168					High-Performer	11			60				202500		60				60				3375				3375				18409
 
 */
+
