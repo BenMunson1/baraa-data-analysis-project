@@ -18,6 +18,10 @@ Highlights:
 	   - average order value (AOV)
 	   - average monthly spend
 */
+-- Create Report: gold.report_customers
+IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
+    DROP VIEW gold.report_customers;
+GO
 
 CREATE VIEW gold.report_customers AS 
 WITH base_query AS (
@@ -99,4 +103,5 @@ customer_key	customer_number	customer_name	age	age_group		customer_segment	last_
 1				AW00011000		Jon Yang		54	50 and above	VIP					2013-05-03		151					3				8249		8				8				28			2749			294
 2				AW00011001		Eugene Huang	49	40-49			VIP					2013-12-10		144					3				6384		11				10				35			2128			182
 3				AW00011002		Ruben Torres	54	50 and above	VIP					2013-02-23		154					3				8114		4				4				25			2704			324
+
 */
